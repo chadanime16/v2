@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="https://link.storjshare.io/s/jwz7bfx57x2hysg4ipfecmhdxthq/v2-js-css/manifest.json?wrap=0">
+  <link rel="apple-touch-icon" href="">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4285f4" />
+  <meta name="robots" content="index, follow">
+  <meta property="og:image" content=""/>
+  <meta name="description"
+    content="Discover and stream your favorite movies and TV shows with Chadcinema - an open source content search and watch website. Enjoy unlimited access to a vast library of content for free.">
+  <title>Chadcinema v2.0</title>
+  <link rel="preload stylesheet" href="https://link.storjshare.io/s/jwz7bfx57x2hysg4ipfecmhdxthq/v2-js-css/style.min.css?wrap=0" as="style">
+  <link rel="preload stylesheet" href="https://link.storjshare.io/s/jwz7bfx57x2hysg4ipfecmhdxthq/v2-js-css/center-atom.min.css?wrap=0" as="style">
+  
+<!-- Serviceworker code for PWA  -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('https://link.storjshare.io/jvg73vlklrvbpzcsowpchsekipba/v2-js-css%2Fsw.js?wrap=0').then(function(registration) {
+          console.log('Service worker registered: ', registration.scope);
+        }).catch(function(error) {
+          console.log('Service worker registration failed: ', error);
+        });
+      });
+    }
+  </script>
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64c60eb01734a80012bd61d3&product=video-share-buttons&source=platform" async="async"></script>
+</head>
+
+<body>
+  <div class="search-container">
+    <input type="search" id="search-input" placeholder="Search any Movie/Webseries/Anime/drama">
+    <button id="search-button">Search</button>
+  </div>
+  <center>
+    <div id="video" class="video">
+      <iframe id="iframe" scrolling="no" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <p style="color: rgb(79, 221, 221); font-weight: 500;">In case of any Error or Too Much Buffering click again on
+        your Movie poster down below or just change the Player from the right corner in video player. </p>
+      <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+      <div id="webSeriesData"></div>
+    </div>
+  </center>
+  <div id="results"></div>
+  <center style="margin-top: 2vh;">
+    <div class="alwaysVisibleContent">
+  
+      <div class="pagelinks">
+        <a href="movies.html" target="_blank">Movies</a>
+        <a href="v2.html" target="_blank">v2</a>
+        <a href="cartoons.html" target="_blank">Cartoons</a>
+        <a href="anime.html" target="_blank">Anime</a>
+        <a href="motivation.html" target="_blank">Contact us</a>
+      </div>
+    </div>
+    <div class="information">
+     
+
+      <div class="information">
+        <h2 style="color:red;"><u>Chadcinema v2.0</u></h2>
+        
+        <p style="color:red;">Search for Movies on v1.0 if you not find that there then only use this! Have a nice experience and for download links contact us by pressing "contact us" option.</p>
+  
+        <p style="color:red;">You can watch any movie and Webseries using chadcinema v2.0. 
+        </p>
+  <p > NOTE: It dosen't mean the v1.0 is going to stop!</p>
+
+      
+      </div>
+    </div>
+  </center>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script src="https://link.storjshare.io/s/jwz7bfx57x2hysg4ipfecmhdxthq/v2-js-css/script.min.js?wrap=0"></script>
+</body>
+</html>
