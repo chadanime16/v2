@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <link rel="manifest" href="https://link.storjshare.io/s/jwz7bfx57x2hysg4ipfecmhdxthq/v2-js-css/manifest.json?wrap=0">
@@ -24,11 +23,10 @@
   <link rel="preload stylesheet" href="https://link.storjshare.io/s/jwz7bfx57x2hysg4ipfecmhdxthq/v2-js-css/style.min.css?wrap=0" as="style">
   <link rel="preload stylesheet" href="https://link.storjshare.io/s/jwz7bfx57x2hysg4ipfecmhdxthq/v2-js-css/center-atom.min.css?wrap=0" as="style">
   
-<!-- Serviceworker code for PWA  -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('https://link.storjshare.io/jvg73vlklrvbpzcsowpchsekipba/v2-js-css%2Fsw.js?wrap=0').then(function(registration) {
+        navigator.serviceWorker.register('https://chadcinema.chadcinema.workers.dev').then(function(registration) {
           console.log('Service worker registered: ', registration.scope);
         }).catch(function(error) {
           console.log('Service worker registration failed: ', error);
@@ -36,9 +34,7 @@
       });
     }
   </script>
-  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64c60eb01734a80012bd61d3&product=video-share-buttons&source=platform" async="async"></script>
 </head>
-
 <body>
   <div class="search-container">
     <input type="search" id="search-input" placeholder="Search any Movie/Webseries/Anime/drama">
@@ -83,5 +79,6 @@
   </center>
   <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
   <script src="https://link.storjshare.io/s/jvi76n4wv7cwyzkponlp6ggl5vsa/v2-js-css%2Fvidsrc%2Fscript.min.js?wrap=0"></script>
+
 </body>
 </html>
